@@ -23,6 +23,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Reduxtoolkit from './Reduxtoolkit';
 import userSlice from './store/slices/UserSlice';
+
 // import {UserSlice} from './store/slices/UserSlice';
 // import './Student.css';
 // import './User';;
@@ -48,6 +49,7 @@ import userSlice from './store/slices/UserSlice';
       {/* <ToDoList2 />/ */}
       <Reduxtoolkit />
       <userSlice />
+     
       
       
      </div>
