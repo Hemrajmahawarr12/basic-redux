@@ -10,15 +10,20 @@ const userSlice = createSlice({
             // console.log("🚀 ~ file: UserSlice.jsx:10 ~ addUser ~ ac̥tion:", action)
             state.push(action.payload)
          },
-        removeUser(state,action){ },
-        deleteUser(state,action){ }
+        removeSingleUser(state,action){ 
+            state.splice(action.payload,1)
+        },
+        ClearAllUser(state,action){ 
+            // console.log(state,action)
+            return [];
+        }
     }
 });
 
 
 
 
-// console.log("show",userSlice.actions);
+console.log("show",userSlice.actions);
 
 export default userSlice;
-export const {addUser} = userSlice.actions;
+export const {addUser,removeSingleUser,ClearAllUser} = userSlice.actions;

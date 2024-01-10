@@ -3,7 +3,7 @@ import FakeuserData from './api';
 import { useDispatch } from 'react-redux';
 import { addUser } from './store/slices/UserSlice';
 import DisplayUsers from './DisplayUsers';
-import DeleteAllUsers from './DeleteAllUsers';
+import DeleteUsers from './DeleteAllUsers';
 
 
 
@@ -11,7 +11,7 @@ function Reduxtoolkit() {
 
 
   const dispatch = useDispatch();
-  console.log(dispatch)
+  // console.log(dispatch);
 
   const AddUsername = (payload) => {
     // console.log(payload);
@@ -25,11 +25,11 @@ function Reduxtoolkit() {
       <button style={{borderRadius:"10px"}} onClick={() => AddUsername(FakeuserData())}>Add new Users</button>
       </div>
       <div>
-      <ul style={{marginLeft:"2 %",listStyle:"none"}}>
+      <ul style={{marginLeft:"2%",listStyle:"none"}}>
         <DisplayUsers />
       </ul>
       <hr />
-      <DeleteAllUsers />
+      <DeleteUsers />
     </div>
     </> 
   )

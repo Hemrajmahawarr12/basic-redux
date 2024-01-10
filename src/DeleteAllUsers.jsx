@@ -1,9 +1,21 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { ClearAllUser } from './store/slices/UserSlice';
 
-  const DeleteAllUsers = () => {
+  const DeleteUsers = () => {
+    const disp = useDispatch();
+
+
+    const DeleteAllUsers=()=>{
+      disp(ClearAllUser())
+    }
+
+
+
+
   return (
-      <button style={{marginLeft:"10%"}}>Clear All Users</button>
+      <button style={{marginLeft:"10%"}} onClick={DeleteAllUsers}>Clear All Users</button>
     )
 }
 
-export default DeleteAllUsers;
+export default DeleteUsers;
