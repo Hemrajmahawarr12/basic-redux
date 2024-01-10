@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import User from './User';
+// import User from './User';
 import reportWebVitals from './reportWebVitals';
 // import { Provider } from 'Course/blog/src/state/store';
 // import 'boo  tstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
-import { store } from './Redex/Reducer/store';
+import store from './store/slices';
+// import { store } from './Redex/Reducer/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
     <Provider store={store}>
 
     <App />
+
     </Provider>
    </>
   

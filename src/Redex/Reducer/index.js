@@ -1,12 +1,12 @@
-import {combineReducers} from 'redux'
-import Reducer from './reducer'
+// import {combineReducers} from 'redux'
+// import Reducer from './reducer'
 
 
 
 
-const reducers = combineReducers({
-    amount:Reducer
-})
+// const reducers = combineReducers({
+//     amount:Reducer
+// })
 
 
-export default reducers;
+// export default reducers;

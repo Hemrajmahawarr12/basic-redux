@@ -19,8 +19,12 @@
 import './App.css';
 // import {Link} from 'react-router-dom'
 // import Student from './Student';
-import User from './User';
+// import User from './User';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Reduxtoolkit from './Reduxtoolkit';
+import userSlice from './store/slices/UserSlice';
+
+// import {UserSlice} from './store/slices/UserSlice';
 // import './Student.css';
 // import './User';;
 // import './ToDoList.css';
@@ -35,7 +39,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
      <div className="App">
       {/* <h1><Student />
       </h1> */}
-      <User /> 
+      {/* <User /> / */}
       {/* <Student /> */}
       {/* <Student name={"Hemraj"} /> */}
       {/* <Student name={"Royal"} email ="r@gmail.com" />
@@ -43,6 +47,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
       {/* <Todolist /> */}
       {/* <ToDoList1 /> */}
       {/* <ToDoList2 />/ */}
+      <Reduxtoolkit />
+      <userSlice />
+     
+      
       
      </div>
    );
